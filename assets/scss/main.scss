@@ -1,0 +1,563 @@
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,800;1,200;1,300&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+h2 {
+  letter-spacing: 6%;
+  font-weight: 800;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    font-weight: 800;
+    letter-spacing: 3%;
+    height: 60px;
+    svg {
+      margin-right: 5px;
+      height: 100%;
+    }
+  }
+  .navbar-nav {
+    margin-left: auto;
+    .nav-item {
+      padding: 10px;
+    }
+    #signUpBtn {
+      display: inline-block;
+      background-color: #000;
+      color: #fefefe;
+      border-radius: 7px;
+      &:hover {
+        &:hover {
+          background-color: #fff;
+          color: #000;
+          border: 1px solid #000;
+        }
+      }
+    }
+  }
+}
+.unique-clothes {
+  h2 {
+    position: relative;
+    font-size: 96px;
+    line-height: 120px;
+    color: #000;
+    z-index: 2;
+  }
+  h3 {
+    font-size: 28px;
+    font-weight: 400;
+    width: 100%;
+  }
+  #rectangle-3 {
+    position: absolute;
+    width: 464.74px;
+    height: 110.99px;
+    z-index: 1;
+  }
+  #rectangle-6 {
+    position: absolute;
+    width: 495.78px;
+    height: 116.34px;
+    top: 50%;
+    left: 8%;
+  }
+}
+.cta {
+  display: inline-block;
+  background-color: #000;
+  border: 1px solid #000;
+  color: #fefefe;
+  border-radius: 10px;
+  padding: 10px 20px;
+  &:hover {
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+}
+#hero-img {
+  width: auto;
+  height: auto;
+}
+.brands {
+  background-color: #ebd96b;
+
+  height: 186px;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.new-arrivals {
+  #new-arrivals-header {
+    position: relative;
+    font-size: 48px;
+    color: #000;
+    z-index: 2;
+  }
+}
+#arrivals-shape {
+  position: relative;
+  z-index: 1;
+  left: 155px;
+  top: -28px;
+}
+.arrivals {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h3 {
+    font-weight: 400;
+    color: #000;
+  }
+  p {
+    color: #7f7f7f;
+  }
+  img {
+    width: 100%;
+    max-height: 600px;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.125);
+      transition: all ease-in 0.5s;
+    }
+  }
+  .arrivals {
+    &:hover,
+    .arrow:hover {
+      cursor: pointer;
+      transform: scale(1.125);
+      transition: all ease-in 0.5s;
+    }
+  }
+}
+.product-text:hover,
+.arrow:hover {
+  cursor: pointer;
+  transform: scale(1.125);
+  transition: all ease-in 0.5s;
+}
+
+.payday-banner {
+  position: relative;
+  background-color: #eccd4a;
+  width: 100%;
+  height: auto;
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .payday-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    h2 {
+      font-size: 96px;
+      line-height: 120px;
+      color: #000;
+      z-index: 2;
+    }
+  }
+  p {
+    font-weight: 400;
+    font-size: 36;
+  }
+  .bold-payday-text {
+    font-weight: 800;
+  }
+  svg {
+    position: relative;
+    z-index: 1;
+    top: 120px;
+  }
+  button {
+    padding: 15px 30px;
+    border-radius: 8px;
+  }
+  #svg-1 {
+    position: absolute;
+    top: 2%;
+    right: 90px;
+  }
+  #svg-2 {
+    position: absolute;
+    top: 2%;
+    left: -705px;
+  }
+  #svg-3 {
+    position: absolute;
+    top: 600px;
+    right: 90px;
+  }
+  #svg-4 {
+    position: absolute;
+    top: 400px;
+    left: -705px;
+  }
+}
+.young-favorite {
+  h2 {
+    font-size: 48px;
+    color: #000;
+  }
+}
+.favorite {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all ease-in 0.5s;
+  }
+}
+.favorite-img {
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all ease-in 0.5s;
+  }
+}
+.mobile-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    font-weight: 800;
+    color: #000;
+  }
+  p {
+    font-size: 24px;
+    font-weight: 400;
+    color: #7c7c7c;
+  }
+}
+.appstore {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  .apple,
+  .google-store {
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+      transition: all ease-in 0.5s;
+    }
+  }
+}
+.comunity {
+  background-color: #e5c643;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    #input-btn {
+      padding: 4px 15px;
+      position: relative;
+      right: 5%;
+      top: 3%;
+      height: 90%;
+      border-radius: 8px;
+      &:hover {
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #000;
+      }
+    }
+  }
+  #input-form {
+    max-width: 300px;
+  }
+}
+
+.footer {
+  background-color: #000;
+}
+li {
+  list-style: none;
+  a {
+    text-decoration: none;
+    color: #8e8e8e;
+    &:hover {
+      color: #dedede;
+    }
+  }
+}
+.about-company {
+  p {
+    svg {
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.125);
+        transition: all ease-in 0.5s;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 990.8px) {
+  .unique-clothes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      text-align: center;
+      position: relative;
+      font-size: 50px;
+      line-height: 60px;
+      color: #000;
+      z-index: 2;
+    }
+    h3 {
+      text-align: center;
+      font-size: 16px;
+      font-weight: 400;
+      width: 100%;
+    }
+    #rectangle-3 {
+      display: none;
+    }
+    #rectangle-6 {
+      display: none;
+    }
+  }
+  .hero-section {
+    .cta-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      svg {
+        display: none;
+      }
+    }
+  }
+  #hero-img {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+  }
+  #new-arrivals-header {
+    font-size: 50px;
+  }
+  .payday-banner {
+    position: relative;
+    background-color: #eccd4a;
+    height: auto;
+    margin: 0;
+
+    img {
+      width: auto;
+      height: 100%;
+      object-fit: cover;
+    }
+    .payday-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      h2 {
+        text-align: center;
+        font-size: 36px;
+        line-height: 60px;
+        color: #000;
+        z-index: 2;
+      }
+    }
+    p {
+      text-align: center;
+      font-weight: 400;
+      font-size: 36;
+    }
+    .bold-payday-text {
+      font-weight: 800;
+    }
+    svg {
+      position: absolute;
+      z-index: 1;
+      top: -50px;
+      width: 160px;
+    }
+    button {
+      padding: 15px 30px;
+      border-radius: 8px;
+    }
+  }
+
+  .mobile-app {
+    h2 {
+      text-align: center;
+    }
+  }
+  .comunity {
+    display: flex;
+
+    align-items: center;
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      #input-form {
+        text-align: center;
+        width: 100%;
+      }
+      #input-btn {
+        margin-left: 70px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 598.8px) {
+  .unique-clothes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      text-align: center;
+      position: relative;
+      font-size: 50px;
+      line-height: 60px;
+      color: #000;
+      z-index: 2;
+    }
+    h3 {
+      text-align: center;
+      font-size: 16px;
+      font-weight: 400;
+      width: 100%;
+    }
+    #rectangle-3 {
+      display: none;
+    }
+    #rectangle-6 {
+      display: none;
+    }
+  }
+  .hero-section {
+    .cta-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      svg {
+        display: none;
+      }
+    }
+  }
+  #hero-img {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+  }
+  #new-arrivals-header {
+    font-size: 50px;
+  }
+  .payday-banner {
+    position: relative;
+    background-color: #eccd4a;
+    height: auto;
+    margin: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: fill;
+    }
+    .payday-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      h2 {
+        text-align: center;
+        font-size: 36px;
+        line-height: 60px;
+        color: #000;
+        z-index: 2;
+      }
+    }
+    p {
+      text-align: center;
+      font-weight: 400;
+      font-size: 36;
+    }
+    .bold-payday-text {
+      font-weight: 800;
+    }
+    svg {
+      position: absolute;
+      z-index: 1;
+      top: -50px;
+      width: 160px;
+    }
+    button {
+      padding: 15px 30px;
+      border-radius: 8px;
+    }
+  }
+  .y-favorite {
+    text-align: center;
+  }
+  .mobile-app {
+    h2 {
+      text-align: center;
+    }
+  }
+  .comunity {
+    display: flex;
+
+    align-items: center;
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      #input-form {
+        text-align: center;
+        width: 100%;
+      }
+      #input-btn {
+        margin-left: 50px;
+      }
+    }
+  }
+
+  .about-company {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+}
